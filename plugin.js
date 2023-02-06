@@ -1796,27 +1796,7 @@ case 'mp4': case 'tovideo': {
                 await fs.unlinkSync(media)
             }
             break
-            case 'url': {
-			if (isBan) return reply(mess.ban)
-			if (isBanChat) return reply(mess.banChat)
-			reply(mess.wait)
-			let {
-				UploadFileUgu,
-				webp2mp4File,
-				TelegraPh
-			} = require('./lib/uploader')
-			let media = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
-			if (/image/.test(mime)) {
-				let anu = await TelegraPh(media)
-				reply(util.format(anu))
-			} else if (!/image/.test(mime)) {
-				let anu = await UploadFileUgu(media)
-				reply(util.format(anu))
-			}
-			await fs.unlinkSync(media)
-		}                                                                                                                                                                                                                                                                                                                                                                              
-	    break
-	       case 'imagenobg': case 'removebg': case 'remove-bg': {
+            case 'imagenobg': case 'removebg': case 'remove-bg': {
 	            if (!quoted) throw `Send/Reply Image With Caption ${prefix + command}`
 	    if (!/image/.test(mime)) throw `Send/Reply Image With Caption ${prefix + command}`
 	    if (/webp/.test(mime)) throw `Send/Reply Image With Caption ${prefix + command}`
@@ -6347,7 +6327,7 @@ const reply = `
     return m.reply (`*${q}* isn't a valid text`)
     }
     break
-case 'sc': case 'ping': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
+case '𝘴𝘤': case 'ping': case '𝗱𝗼𝗻𝗮𝘁𝗲': case '𝗱𝗼𝗻𝗮𝘁𝗲': case 'cekupdate': case 'updatebot': case 'cekbot': case '𝘴𝘰𝘶𝘳𝘤𝘦𝘤𝘰𝘥𝘦': {
 XeonBotInc.sendMessage(from, { react: { text: `✅`, key: m.key }})
 teks = `*「 ${global.botname} Script 」*\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\n *.`
 let buttons = [
@@ -7852,7 +7832,6 @@ const buttonMessage = {
 ❐.  emoji [emoji]
 ❐.  mp4 [reply img]
 ❐.  togif [reply stick] 
-❐.  url [reply img/vi]
 ❐.  tovn [reply aud]
 ❐.  mp3 [reply vn]
 ❐.  toaudio [reply vid]
