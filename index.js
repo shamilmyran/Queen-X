@@ -183,8 +183,8 @@ title: `${ownername}`,
 body: `Don't forget to read group description`,
 mediaType:2,
 thumbnail: XeonWlcm,
-sourceUrl: `${websitex}`,
-mediaUrl: `${websitex}`
+sourceUrl: `https://tinyurl.com/23pxwjpe`,
+mediaUrl: `https://tinyurl.com/23pxwjpe`
 }}
 }
 XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
@@ -217,8 +217,8 @@ title: `${ownername}`,
 body: `Bye! my friend, take care.`,
 mediaType:2,
 thumbnail: XeonLft,
-sourceUrl: `${websitex}`,
-mediaUrl: `${websitex}`
+sourceUrl: `https://tinyurl.com/23pxwjpe`,
+mediaUrl: `https://tinyurl.com/23pxwjpe`
 }}
 }
 XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
