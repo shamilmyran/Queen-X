@@ -1942,7 +1942,7 @@ ${themeemoji} Url : ${anulay.url}`,
                 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
-case 'playmp3': //credit: Ray Senpai ❤️ https://github.com/EternityBots/Nezuko
+case 'playmp3': //credit: 𝗦𝗣𝗔𝗥𝗞𝗬 𝗠𝗢𝗗𝗦 😌👑 https://github.com/Sparkymon777
 if (!text) throw `Example : ${prefix + command} anime whatsapp status`
 const xeonplaymp3 = require('./lib/ytdl2')
 let yts = require("youtube-yts")
@@ -1952,7 +1952,7 @@ const pl= await xeonplaymp3.mp3(anup3k.url)
 await XeonBotInc.sendMessage(m.chat,{
     audio: fs.readFileSync(pl.path),
     fileName: anup3k.title + '.mp3',
-    mimetype: 'audio/mp4', ptt: true,
+    mimetype: 'audio/mp4', ptt: false,
     contextInfo:{
         externalAdReply:{
             title:anup3k.title,
@@ -1960,6 +1960,7 @@ await XeonBotInc.sendMessage(m.chat,{
             thumbnail: await fetchBuffer(pl.meta.image),
             mediaType:2,
             mediaUrl:anup3k.url,
+        
         }
 
     },
