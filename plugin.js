@@ -285,6 +285,10 @@ if (command) {
 await XeonBotInc.sendPresenceUpdate('composing', m.chat)
 XeonBotInc.sendReadReceipt(from, m.sender, [m.key.id])}
 }
+  //autoread gc only
+  if (global.autoReadGc) {
+  if (m.isGroup) { XeonBotInc.sendReadReceipt(m.chat, m.sender, [m.key.id]) }
+}
 //auto recording all
     if (global.autoRecord) { if (m.chat) { XeonBotInc.sendPresenceUpdate('recording', m.chat) }
 }
