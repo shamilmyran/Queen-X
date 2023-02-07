@@ -279,7 +279,12 @@ const hsjdh = randomNomor(5)
             ////////////////////////////////////////text: `${pickRandom(['😨','😅','😂','😳','😎', '🥵', '😱', '🐦', '🙄', '🐤','🗿','🐦','🤨','🥴','😐','👆','😔', '👀','👎'])}`,
             ////key: m.key,
           /////}})
-
+//autoreader gc and pm
+if (global.autoreadpmngc) {
+if (command) {
+await XeonBotInc.sendPresenceUpdate('composing', m.chat)
+XeonBotInc.sendReadReceipt(from, m.sender, [m.key.id])}
+}
 //auto recording all
     if (global.autoRecord) { if (m.chat) { XeonBotInc.sendPresenceUpdate('recording', m.chat) }
 }
@@ -1742,7 +1747,7 @@ case 'toimage': case 'toimg': {
                     fs.unlinkSync(ran)
                 })
             }
-            break
+         break
 case 'mp4': case 'tovideo': {
                 if (!quoted) throw 'Reply Image'
                 if (!/webp/.test(mime)) throw `reply sticker with caption *${prefix + command}*`
@@ -1775,7 +1780,21 @@ case 'mp4': case 'tovideo': {
             XeonBotInc.sendMessage(m.chat, {document: audio, mimetype: 'audio/mpeg', fileName: `Convert By ${XeonBotInc.user.name}.mp3`}, { quoted : m })
             }
             break
-            case 'tovn': case 'toptt': {
+           case 'tourl': {
+                replay(mess.wait)
+		let { UploadFileUgu, webp2mp4File, TelegraPh } = require('./lib/uploader')
+                let media = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
+                if (/image/.test(mime)) {
+                    let anu = await TelegraPh(media)
+                    reply(util.format(anu))
+                } else if (!/image/.test(mime)) {
+                    let anu = await UploadFileUgu(media)
+                    reply(util.format(anu))
+                }
+                await fs.unlinkSync(media)
+            }
+           break
+           case 'tovn': case 'toptt': {
             if (!/video/.test(mime) && !/audio/.test(mime)) throw `Reply Video/Audio That You Want To Be VN With Caption ${prefix + command}`
             if (!quoted) throw `Reply Video/Audio That You Want To Be VN With Caption ${prefix + command}`
             m.reply(mess.wait)
