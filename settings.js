@@ -6,6 +6,7 @@ const chalk = require('chalk')
 global.autoTyping = false //auto tying in gc (true to on, false to off)
 global.autoRecord = false //auto recording (true to on, false to off)
 global.autoreadpmngc = true //auto reading in gc and pm (true to on, false to off)
+global.autoReadGc = false //auto reading in gc (true to on, false to off)
 
 //documents variants
 global.doc1 = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
