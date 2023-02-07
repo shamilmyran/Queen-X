@@ -1885,7 +1885,7 @@ if (!text) return m.reply(`Example : ${prefix + command} Stay jb`)
             let ytslagu = require("youtube-yts")
             let lagusearch = await ytslagu(text)
             listSerch = []
-            teskd = `*👽 Created by Queen-x owner Yuresh Searched Song:* ${text}\n`
+            teskd = `*🎶 𝚜𝚎𝚕𝚎𝚌𝚝 𝚢𝚘𝚞𝚛 𝚜𝚘𝚗𝚐:* ${text}\n`
             for (let i of lagusearch.all) {
                 listSerch.push({
                     title: i.title,
@@ -3291,7 +3291,7 @@ m.reply(`There are no users who have rented bot yet`)
 }
 break
 case 'git': case 'gitclone':
-if (!args[0]) return m.reply(`*[ 💃🏻 Qᴜᴇᴇɴ-x ʙᴏᴛ ᴍᴅ 💃🏻 ]*\n*🖥️ ɢɪᴛ :*\nhttps://github.com/yureshkav/Queen-x`)
+if (!args[0]) return m.reply(`*[ ᴰᴼᴹᴵᴻᴵᴄ ʙᴏᴛ ᴍᴅ 🎈 ]*\n*🖥️ ɢɪᴛ :*\nhttps://github.com/Dominic/Dominic-md`)
 if (!isUrl(args[0]) && !args[0].includes('github.com')) return reply(`Link invalid!!`)
 let regex1 = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
     let [, user, repo] = args[0].match(regex1) || []
@@ -3455,12 +3455,12 @@ View list of Messages With ${prefix}listmsg`)
             }
 	    break
 case 'developer': case 'dev': {
-XeonBotInc.sendMessage(from, { react: { text: `♕`, key: m.key }})
-reply(`•QUEEN-X💃•\n\n\n©2023.\n\nYURESH OWNER\nPm: wa.me/94719225807`)
+XeonBotInc.sendMessage(from, { react: { text: `😌`, key: m.key }})
+reply(`•🌈 𝑩𝑶𝑻 𝑴𝑫 ᳀•\n\n\n©2023.\n\nDOMINIC OWNER\nPm: wa.me/918593074023`)
 }
             break
 case 'owner': case 'creator': case 'moderator': case 'mod': {
-XeonBotInc.sendMessage(from, { react: { text: `💃`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🌈`, key: m.key }})
 XeonBotInc.sendContact(m.chat, owner, m)
 }
             break
@@ -7619,8 +7619,8 @@ const sendMsg = await XeonBotInc.sendMessage(m.chat, listMessage)
 }
 break
             case 'allmenu':{
-            XeonBotInc.sendMessage(from, { react: { text: `✅`, key: m.key }})
-var unicorn = await getBuffer(picak+'Queen-x All Menu')
+            XeonBotInc.sendMessage(from, { react: { text: `💦`, key: m.key }})
+var unicorn = await getBuffer(picak+'All Menu')
 
 const buttons = [
   {buttonId: 'ping', buttonText: {displayText: '𝑷𝑰𝑵𝑮'}, type: 1},
@@ -8421,7 +8421,7 @@ const sendMsg = await XeonBotInc.sendMessage(m.chat, buttonMessage)
 }
 break
             case 'groupmenu':{
-var unicorn = await getBuffer(picak+'Queen-x Group Menu')
+var unicorn = await getBuffer(picak+'group Menu')
 
 const buttons = [
   {buttonId: 'ping', buttonText: {displayText: '𝑷𝑰𝑵𝑮'}, type: 1},
@@ -8457,7 +8457,7 @@ const sendMsg = await XeonBotInc.sendMessage(m.chat, buttonMessage)
 }
 break
             case 'downloadmenu':{
-var unicorn = await getBuffer(picak+'Queen-x Download Menu')
+var unicorn = await getBuffer(picak+'Download Menu')
 
 const buttons = [
   {buttonId: 'ping', buttonText: {displayText: '𝑷𝑰𝑵𝑮'}, type: 1},
@@ -8482,7 +8482,7 @@ const sendMsg = await XeonBotInc.sendMessage(m.chat, buttonMessage)
 }
 break
             case 'searchmenu':{
-var unicorn = await getBuffer(picak+'Queen-x Search Menu')
+var unicorn = await getBuffer(picak+'Search Menu')
 
 const buttons = [
   {buttonId: 'ping', buttonText: {displayText: '𝑷𝑰𝑵𝑮'}, type: 1},
@@ -8517,7 +8517,7 @@ const sendMsg = await XeonBotInc.sendMessage(m.chat, buttonMessage)
 }
 break
             case 'convertmenu':{
-var unicorn = await getBuffer(picak+'Queen-x Convert Menu')
+var unicorn = await getBuffer(picak+'Convert Menu')
 
 const buttons = [
   {buttonId: 'ping', buttonText: {displayText: '𝑷𝑰𝑵𝑮'}, type: 1},
@@ -8741,7 +8741,7 @@ const sendMsg = await XeonBotInc.sendMessage(m.chat, buttonMessage)
 }
 break
             case 'anonymousmenu':{
-var unicorn = await getBuffer(picak+'Queen-x logo Menu')
+var unicorn = await getBuffer(picak+'logo Menu')
 
 const buttons = [
   {buttonId: 'ping', buttonText: {displayText: '𝑷𝑰𝑵𝑮'}, type: 1},
@@ -8961,7 +8961,7 @@ const sendMsg = await XeonBotInc.sendMessage(m.chat, buttonMessage)
 }
 break
 case 'warmenu':{
-var unicorn = await getBuffer(picak+'Queen-x bug Menu')
+var unicorn = await getBuffer(picak+'bug Menu')
 
 const buttons = [
   {buttonId: 'ping', buttonText: {displayText: '𝑷𝑰𝑵𝑮'}, type: 1},
